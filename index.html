@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="./css/todo.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="todo_wrap">
+            <div class="todo_top">
+                <h1 class="todo_title">To Do</h1>
+                <div class="color_palette">
+                    <ul>
+                        <li class="sel_color color1 on"></li>
+                        <li class="sel_color color2"></li>
+                        <li class="sel_color color3"></li>
+                        <li class="sel_color color4"></li>
+                    </ul>
+                </div>
+
+                <div class="add_todo">
+                    <input type="text" name="add_todo" placeholder="할 일 입력" autofocus>
+                    <button type="button" class="btn_add_todo">추가</button>
+                </div>
+            </div>
+
+            <ul class="todo_list">
+                <li class="todo_item">
+                    <span class="todo_check">✓</span>
+                    <span class="todo_text" style="color:rgb(255, 59, 59)">4. 모두 삭제하기</span>
+                    <span class="todo_remove">×</span>
+                </li>
+                <li class="todo_item">
+                    <span class="todo_check">✓</span>
+                    <span class="todo_text" style="color:rgb(31, 162, 255)">3. 글자 색 변경하여 작성하기</span>
+                    <span class="todo_remove">×</span>
+                </li>
+                <li class="todo_item done">
+                    <span class="todo_check">✓</span>
+                    <span class="todo_text">2. 한 일 완료하기</span>
+                    <span class="todo_remove">×</span>
+                </li>
+                <li class="todo_item">
+                    <span class="todo_check">✓</span>
+                    <span class="todo_text">1. 할 일 작성하기</span>
+                    <span class="todo_remove">×</span>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- //wrap -->
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+
+</html>
