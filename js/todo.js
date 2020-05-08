@@ -10,7 +10,7 @@ $(document).ready(function () {
         ele += '<li class="todo_item">';
         ele += '    <span class="todo_check">✓</span>';
         ele += '    <span class="todo_text" style="color:' + $color + '">' + $todo + '</span>';
-        ele += '    <span class="todo_remove">x</span>';
+        ele += '    <span class="todo_remove">×</span>';
         ele += '</li>';
 
         if ($target.val() !== '') {

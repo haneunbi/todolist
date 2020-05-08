@@ -4,6 +4,7 @@ body{
     background:#9796f0; /* fallback for old browsers */
     background:-webkit-linear-gradient(45deg, #fbc7d4, #9796f0); /* Chrome 10-25, Safari 5.1-6 */
     background:linear-gradient(45deg, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;
 }
 ul{margin:0;padding:0;list-style:none}
 input{padding:0;border:0;vertical-align:top}
@@ -24,16 +25,17 @@ button{padding:0;border:0;background-color:transparent}
 .sel_color.color3{background-color:#45B649}
 .sel_color.color4{background-color:#1FA2FF}
 .add_todo{margin-bottom:12px;font-size:0}
-.add_todo input{display:inline-block;margin:0 3%;padding:0 2%;width:70%;height:28px;font-size:15px;border:1px solid #ddd}
+.add_todo input{display:inline-block;margin:0 3%;padding:0 2%;width:70%;height:28px;font-size:14px;border:1px solid #ddd}
 .btn_add_todo{display:inline-block;width:17%;height:30px;font-size:15px;color:#fff;background-color:#9796f0}
 .todo_list{height:calc(100% - 131px);overflow:auto}
 .todo_empty{padding:40px 20px;border-top:1px solid #f4f4f4;color:#aaa;font-size:14px;text-align:center}
-.todo_item{padding:8px 10px;min-height:18px;border-top:1px solid #f4f4f4;font-size:14px}
+.todo_item{padding:10px;border-top:1px solid #f4f4f4;font-size:14px}
 .todo_check,
 .todo_text,
-.todo_remove{display:inline-block}
-.todo_check{width:16px;color:#9796f0;font-size:16px;line-height:1;opacity:0}
-.todo_remove{float:right;margin-top:-3px;width:18px;height:18px;line-height:1;font-size:18px;color:#ff3b3b;cursor:pointer;opacity:0}
+.todo_remove{display:inline-block;vertical-align:top}
+.todo_check{width:16px;height:18px;color:#9796f0;font-size:16px;line-height:1;opacity:0}
+.todo_text{width:calc(100% - 44px)}
+.todo_remove{margin-top:-3px;width:18px;height:18px;font-size:18px;line-height:1;color:#ff3b3b;vertical-align:top;cursor:pointer;opacity:0}
 .todo_item.done .todo_check{opacity:1}
 .todo_item.done .todo_text{text-decoration:line-through;opacity:.4}
 .todo_item:hover .todo_remove,
